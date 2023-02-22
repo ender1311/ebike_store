@@ -1,25 +1,24 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700');
 @import url("https://fonts.googleapis.com/css?family=Metal+Mania");
 
-@font-face {
-    font-family: "Booter - Zero Zero";
-    src: url("Fonts/Booter - Zero Zero.woff") format("woff"),
-         url("Fonts/Booter - Zero Zero.woff2") format("woff2");
+font-face {
+    font-family: "sans-serif";
     font-weight: normal;
     font-style: normal;
 }
 
 * {
     box-sizing: border-box;
-    font-family: Raleway;
+    font-family: sans-serif;
     color: #777;
 }
 
-html, body {
+html {
     margin: 0;
     padding: 0;
     min-height: 100%;
 }
+
 
 .nav ul {
     margin: 0;
@@ -39,8 +38,8 @@ html, body {
 .main-nav {
     text-align: center;
     font-size: 1.1em;
-    font-weight: lighter;
-    border-bottom: 1px solid rgba(255, 255, 255, .3)
+    font-weight: medium;
+    border-bottom: 4px solid rgba(255, 255, 255, .3);
 }
 
 .main-nav li {
@@ -52,24 +51,29 @@ html, body {
 }
 
 .main-header {
-    background-color: rgba(0, 0, 0, .6);
-    background-image: url("Images/Header Background.jpg");
+    background-color: rgba(166, 183, 167, 0.6);
+    background-image: url("Images/what-ebike-desktop2.jpg");
     background-blend-mode: multiply;
     background-size: cover;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 .band-name {
     text-align: center;
     margin: 0;
     font-size: 4em;
-    font-family: "Booter - Zero Zero";
+    font-family: "sans-serif";
     font-weight: normal;
     color: white;
 }
 
 .band-name-large {
-    font-size: 8em;
+    font-size: 5em;
 }
 
 .content-section {
@@ -82,7 +86,7 @@ html, body {
     padding: 0 1.5em;
 }
 .section-header {
-    font-family: "Metal Mania";
+    font-family: "sans-serif";
     font-weight: normal;
     color: #333;
     text-align: center;
@@ -204,6 +208,8 @@ html, body {
 
 .shop-item {
     margin: 30px;
+    border: 1px solid darkgray;
+    padding: 10px;
 }
 
 .shop-item-title {
@@ -218,6 +224,7 @@ html, body {
 
 .shop-item-image {
     height: 250px;
+    max-width: 250px;
 }
 
 .shop-item-details {
