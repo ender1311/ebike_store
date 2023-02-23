@@ -38,7 +38,7 @@ html {
 .main-nav {
     text-align: center;
     font-size: 1.1em;
-    font-weight: medium;
+    font-weight: normal;
     border-bottom: 4px solid rgba(255, 255, 255, .3);
 }
 
@@ -51,7 +51,6 @@ html {
 }
 
 .main-header {
-    background-color: rgba(166, 183, 167, 0.6);
     background-image: url("Images/what-ebike-desktop2.jpg");
     background-blend-mode: multiply;
     background-size: cover;
@@ -61,9 +60,11 @@ html {
     top: 0;
     left: 0;
     right: 0;
+    border-bottom: 8px solid rgba(0, 119, 254, 0.3);
+    z-index: 100;
 }
 
-.band-name {
+.bike-name {
     text-align: center;
     margin: 0;
     font-size: 4em;
@@ -72,7 +73,15 @@ html {
     color: white;
 }
 
-.band-name-large {
+#bike_title {
+    text-align: center;
+    margin: 0;
+    font-size: 4em;
+    font-family: "sans-serif";
+    font-weight: normal;
+    color: white;
+}
+.bike-name-large {
     font-size: 5em;
 }
 
@@ -93,7 +102,7 @@ html {
     font-size: 2.5em;
 }
 
-.about-band-image {
+.about-bike-image {
     float: left;
     height: 200px;
     width: 200px;
@@ -102,9 +111,9 @@ html {
 }
 
 .main-footer {
-    background-color: #56CCF2;
-    color: white;
+    background-image: url("Images/Desktop-8602.jpg");
     padding: .25em 0;
+    height: 100px;
 }
 
 .main-footer-container {
