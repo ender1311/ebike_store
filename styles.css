@@ -228,11 +228,11 @@ html {
     font-weight: bold;
     font-size: 1.5em;
     color: #333;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
 }
 
 .shop-item-image {
-    height: 250px;
+    height: 200px;
     max-width: 250px;
 }
 
@@ -243,7 +243,8 @@ html {
 }
 
 .shop-item-price {
-    flex-grow: 1;
+    flex-grow: 1.5;
+    font-size: 1.3em;
     color: #333;
 }
 
