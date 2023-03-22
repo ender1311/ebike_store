@@ -9,9 +9,9 @@ JavaScript file is used for manipulating the DOM. Add to Cart button triggers js
 
 ## Getting Started
 
-### Dependencies
+### Prequisites
 
-web browser
+any web browser able to load javascript
 
 ### Installing
 
@@ -24,8 +24,6 @@ git clone https://github.com/ender1311/ebike_store.git
 ### Executing program
 
 view store.html in your web browser
-
-
 
 
 ## Authors
