@@ -17,6 +17,9 @@ web browser
 
 Clone the respository
 
+```sh
+git clone https://github.com/ender1311/ebike_store.git
+```
 
 ### Executing program
 
