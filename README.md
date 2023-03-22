@@ -4,7 +4,8 @@ eBike accessories are now online available for purchase
 
 ## Description
 
-This challenge involved creating grid design for inventory of items, the ability to add to cart, and ability to select different quantities
+This challenge involved creating grid design for inventory of items, the ability to add to cart, and ability to select different quantities.
+JavaScript file is used for manipulating the DOM. Add to Cart button triggers js functions to adjust shopping cart according to user input.
 
 ## Getting Started
 
