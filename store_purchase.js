@@ -33,13 +33,43 @@ function ready() {
 
 function purchaseClicked() {
     alert('Thank you for your purchase!')
-    var cartItems=document.getElementsByClassName('cart-items')[0];
-    while (cartItems.hasChildNodes()) {
-        cartItems.removeChild(cartItems.firstChild)
-    }
-    updateCartTotal();
+ 
 
     
+    var cartItems = [];
+    var cartRows = document.getElementsByClassName('cart-items')[0].getElementsByClassName('cart-row');
+    for (var i = 0; i < cartRows.length; i++) {
+        var cartItem = cartRows[i].getElementsByClassName('cart-item-title')[0].innerText;
+        var cartPrice = cartRows[i].getElementsByClassName('cart-price')[0].innerText * 100;
+        var cartQty = cartRows[i].getElementsByClassName('cart-quantity-input')[0].value;
+        var j = i+1000;
+        cartItems.push({ id: i+1, name: cartItem, priceInCents: cartPrice, quantity: cartQty });
+    }
+    fetch("http://3.133.140.120:3000/checkout-session", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+            items: cartItems,
+        }),
+    })
+        .then((res) => {
+            if (res.ok) return res.json();
+            return res.json().then((json) => Promise.reject(json));
+        })
+        .then(({ url }) => {
+            window.location = url;
+        })
+        .catch((e) => {
+            console.error(e.error);
+        });
+
+        var cartItems=document.getElementsByClassName('cart-items')[0];
+        while (cartItems.hasChildNodes()) {
+            cartItems.removeChild(cartItems.firstChild)
+        }
+        updateCartTotal();
 }
 
 function removeCartItem(event) {

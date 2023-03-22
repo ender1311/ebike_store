@@ -13,11 +13,7 @@ font-face {
     color: #777;
 }
 
-html {
-    margin: 0;
-    padding: 0;
-    min-height: 100%;
-}
+
 
 
 .nav ul {
@@ -33,6 +29,9 @@ html {
     padding: .5em;
     color: white;
     text-decoration: none;
+    font-weight: bold;
+    font-size: 24px;
+    
 }
 
 .main-nav {
@@ -43,7 +42,7 @@ html {
 }
 
 .main-nav li {
-    padding: 0 5%;
+    margin:20px;
 }
 
 .nav a:hover {
@@ -51,12 +50,12 @@ html {
 }
 
 .main-header {
-    background-image: url("Images/what-ebike-desktop2.jpg");
+    background-image: url("./Images/roadlite_top.jpg");
     background-blend-mode: multiply;
     background-size: cover;
     padding-bottom: 10px;
 
-    position: fixed;
+
     top: 0;
     left: 0;
     right: 0;
@@ -111,9 +110,10 @@ html {
 }
 
 .main-footer {
-    background-image: url("Images/Desktop-8602.jpg");
+    background-image: url("./Images/roadlite_bottom.jpg");
     padding: .25em 0;
     height: 100px;
+    background-size: cover;
 }
 
 .main-footer-container {
@@ -133,6 +133,7 @@ html {
 .footer-nav img {
     width: 30px;
     height: 30px;
+    
 }
 
 .btn {
